@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 30px auto;
+            background-color: aquamarine;
+            position: relative;
+            width: 80%;
+            height: 200vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .aside1, .aside2{
+            height: 90vh;
+            margin: 20px 20px;
+            /* width: 20%; */
+            background-color: white;
+            position: sticky;
+            top: 10vh;
+            flex-grow: 1;
+            /* height: 90%; */
+        }
+        .main{
+            height: 90%;
+            margin: 20px auto;
+            /* width: 50%; */
+            background-color: white;
+            flex-grow: 2;
+        }
+
+        .container2{
+            width: 80%;
+            margin: 40px auto;
+            background-color: aquamarine;
+            height: 200vh;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="aside1"></div>
+        <div class="main"></div>
+        <div class="aside2"></div>
+    </div>
+
+    <div class="container2">
+
+    </div>
+
+</body>
+</html>
