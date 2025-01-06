@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(235, 227, 243);
+}
+
+
+.card{
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow:7px 7px 8px -2px #afabab;;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+}
+
+.card *{
+    background-color: white;
+}
+
+.credit-card,.waving-hand, .call-icon{
+    width: 15%;
+    margin: 30px auto 0px;
+}
+
+.card-content{
+    margin-bottom: 30px;
+    color: rgb(91, 91, 91);
+}
+
+.card-content span{
+    font-weight: bold;
+}
+
+.btn{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(106, 64, 231);
+    color: white;
+    border-radius: 10px;
+    border: none ;
+}
+
+.btn:hover{
+    background-color: rgb(73, 23, 223);
+}
+
+.security-content{
+    margin-top: 20px;
+}
+
+.security-content p{
+    display: inline-block;
+    color: rgb(101, 101, 101);
+}
+
+.security-shield{
+    width: 4%;
+}
+
+.input, .input-code{
+    display: flex;
+    border: 1px solid rgb(162, 162, 162);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input:hover, .input-code:hover{
+    border: 1px solid blue;
+    box-shadow: 1px 1px 11px -5px #514ee6;
+}
+
+.input input, .input-code{
+    font-size: 16px;
+    border: none;
+
+}
+
+.input input:focus, .input-code{
+    outline-width: 0;
+}
+
+.card-number{
+    width: 50%;
+}
+
+.card-validity{
+    width: 25%;
+}
+
+.cvc{
+    width: 15%;
+}
+
+.credit-card-input, .office-bag, .house, .gift, .port{
+    width: 10%;
+}
+
+.btn-welcome-card{
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-content{
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.right-arrow{
+    display: none;
+}
+
+.btn-welcome-card:hover  .right-arrow{
+    display: block;
+    width: 10%;
+}
+
+.btn-welcome-card:hover{
+    background-color: rgb(236, 232, 241);
+}
+
+.btn-welcome-card:hover *{
+    background-color: rgb(236, 232, 241);
+}
+
+.input-code{
+    display: block;
+    border: 1px solid rgb(162, 162, 162);
+    text-align: center;
+}
+
+.student{
+    width: 80%;
+}
+
+.porting-form-footer{
+    color: gray;
+}
