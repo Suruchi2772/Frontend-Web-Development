@@ -1,0 +1,109 @@
+<!-- HTML Assignment - 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h1><u>Assignment - 2</u></h1>
+    <!-- Question - 1 -->
+     <h2><u>Employee Data</u></h2>
+     <table border="2px">
+        <tr>
+            <th>Emp_ID</th>
+            <th>Name</th>
+            <th>Designation</th>
+        </tr>
+        <tr>
+            <td>034109</td>
+            <td>Sushant</td>
+            <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>034111</td>
+            <td>Tanishq</td>
+            <td>Frontend Web Developer</td>
+        </tr>
+        <tr>
+            <td>034123</td>
+            <td>Devish</td>
+            <td>Backend Developer</td>
+        </tr>
+     </table>
+
+     <!-- Question - 2 -->
+    <h2><u>Datalist</u></h2>
+    <ul>
+        <li><strong><u>HTML</u></strong> : It is a markup language, that is used to design the structure of the website.</li>
+        
+        <li><strong><u>CSS</u></strong> : CSS is a styling language that makes our website or web app more attractive.</li>
+       
+        <li><strong><u>Tailwind</u></strong> : Tailwind CSS is used for designing responsive, customizable user interfaces. It provides utility classes to manage layout, spacing, typography, colors, and more.</li>
+        
+        <li><strong><u>Javascript</u></strong> : Javascript is the brain of the website, it provides functionality to our web app and make it more interactive.</li>
+        
+        <li><strong><u>React</u></strong> : React is a JavaScript library for building user interfaces. React is used to build single-page applications.</li>   
+    </ul>
+    
+    <h2><u>Steps for installing Vs code</u></h2>
+    <ol>
+        <li>Download the VS Code file from the Official Website.</li>
+        <li>Execute the download file.</li>
+        <li>Accept the Terms & Conditions.</li>
+        <li>Click on the Install button.</li>
+        <li>Wait for the installation to complete.</li>
+        <li>Click on the Launch button to start it.</li>
+    </ol>
+
+    <!-- Question - 4 and 5 - form and validation -->
+    <h2><u>Book Order for Umberalla Cut Baby Dress</u></h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="u_name" minlength="3" maxlength="50" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <br>
+        <p>Gender</p>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="age">Select age : </label>
+        <select name="age" id="age" required>
+            <option value="0-6 month">0-6 month</option>
+            <option value="6-12 month">6-12 month</option>
+            <option value="1-3 years">1-3 years</option>
+            <option value="3-5 years">3-5 years</option>
+            <option value="5-8 years">5-8 years</option>
+            <option value="8-10 years">8-10 years</option>
+            <option value="10-12 years">10-12 years</option>
+        </select>
+
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" rows="10" cols="30" required>Enter your address</textarea>
+
+        <br><br>
+
+        <input type="checkbox" name="notification" id="notification">
+        <label for="notification">I want to get notification.</label>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
