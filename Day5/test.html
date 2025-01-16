@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        /* .container{
             margin: 30px auto;
             background-color: aquamarine;
             position: relative;
@@ -18,17 +18,17 @@
         .aside1, .aside2{
             height: 90vh;
             margin: 20px 20px;
-            /* width: 20%; */
+            width: 20%;
             background-color: white;
             position: sticky;
             top: 10vh;
             flex-grow: 1;
-            /* height: 90%; */
+            height: 90%;
         }
         .main{
             height: 90%;
             margin: 20px auto;
-            /* width: 50%; */
+            width: 50%;
             background-color: white;
             flex-grow: 2;
         }
@@ -38,13 +38,156 @@
             margin: 40px auto;
             background-color: aquamarine;
             height: 200vh;
+        } 
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body{
+            background: url(img/bg.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+
+        .gallery-outer-container{
+            padding: 50px 30px;
+            margin: auto;
+            background-color: transparent;
+        }
+
+        .scrollable-img-gallery{
+            height: 80vh;
+            width: 100%;
+            margin: auto;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -ms-overflow-style: none; 
+            scrollbar-width: none;
+        }
+
+        .scrollable-img-gallery::-webkit-scrollbar{
+            display: none;
+        }
+
+        .scrollable-img-gallery img{
+            height: 100%;
+            width: 90%;
+            object-fit: cover;
+        }*/
+
+        /* body{
+            margin: 10px 80px;
+            padding: 0;
+            background-color: black;
+            
+        }
+
+        .scrollable-img-gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            defines width of columns
+            grid-template-rows: 300px 300px 300px 300px 300px;
+            gap: 20px;
+            justify-content and align items property is same as flex and the place-content property is a shorthand for align items and justify-content
+        }
+
+        .scrollable-img-gallery > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 1px 1px 22px 2px gray;
+        } */
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 100px;
+            width: 400px;
+            background-color: rgba(127, 255, 212, 0.843);
+            position: relative;
+            margin: 50px auto;
+        }
+        
+        .tint{
+            background-color: rgba(0, 0, 0, 0.601);
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            width: 0;
+            height: 100%;
+            right: 100%;
+            transition: all .6s;
+        }
+        .container:hover .tint{
+            right: 0;
+            width: 100%;
+        }
+
+        .text{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card-container{
+            overflow-x: auto;
+            margin-top: 50px;
+            white-space: nowrap;
+            background-color: aqua;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .card-container::-webkit-scrollbar{
+            display: none;
+        }
+
+        .card{
+            border-radius: 30px;
+            height: 400px;
+            width: 300px;
+            background-color: blue;
+            overflow: hidden;
+            flex-shrink: 0;
+            animation: card-animation 5s linear infinite;
+        }
+
+        @keyframes card-animation {
+            to{}
+            from{
+                transform: translate(-100%,0);
+            }
+        }
+
+        .card-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
 
     </style>
 </head>
 <body>
     
-    <div class="container">
+    <!-- <div class="container">
         <div class="aside1"></div>
         <div class="main"></div>
         <div class="aside2"></div>
@@ -52,7 +195,43 @@
 
     <div class="container2">
 
-    </div>
+    </div> -->
+    <!-- <div class="scrollable-img-gallery">
+        <img src="img/img.jpg" alt="">
+        <img src="img/rose.jpg" alt="">
+        <img src="img/rose2.jpg" alt="">
+        <img src="img/img.jpg" alt="">
+        <img src="img/rose.jpg" alt="">
+        <img src="img/rose2.jpg" alt="">
+        <img src="img/img.jpg" alt="">
+        <img src="img/rose.jpg" alt="">
+        <img src="img/rose2.jpg" alt="">
+        <img src="img/img.jpg" alt="">
+        <img src="img/rose.jpg" alt="">
+        <img src="img/rose2.jpg" alt="">
+        <img src="img/img.jpg" alt="">
+        <img src="img/rose.jpg" alt="">
+        <img src="img/rose2.jpg" alt="">
+    </div> -->
 
+        <!-- <div class="container">
+            <div class="tint"></div>
+            <h1 class="text">Welcome</h1>
+        </div> -->
+
+        <div class="card-container">
+            <div class="card">
+                <img src="img/rose.jpg" class="card-img" alt="">
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
 </body>
 </html>
