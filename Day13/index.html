@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="m-0 p-0 bg-purple-100">
+    <div class="bg-white w-96 mx-auto flex flex-col justify-between items-center px-9 py-8 my-20 rounded-xl">
+        <p class="text-4xl mb-2">👋</p>
+
+        <h1 class="text-4xl font-semibold mb-2">Welcome Amy!</h1>
+
+        <p class="text-center font-normal leading-5 text-base text-gray-600 mb-8">It's great to have you with us! To help us optimize your experience, tell us how you plan to use OpenPhone.</p>
+
+        <div class="w-full bg-purple-100 p-3 rounded-lg mb-2">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 text-slate-700">
+                    <p>💼</p>
+                    <p class="text-sm align-baseline font-medium">Work</p>
+                </div>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></p>
+            </div>
+        </div>
+
+        <div class="flex gap-3 w-full p-3 text-slate-700 justify-start">
+            <p>🏠</p>
+            <p class="text-sm align-baseline font-medium">Personal</p>
+        </div>
+    </div>
+
+    <div class="bg-white w-96 mx-auto flex flex-col justify-between items-center px-9 py-9 my-20 rounded-xl">
+        <p class="text-4xl mb-2">💳</p>
+
+        <h1 class="text-4xl font-semibold mb-2">Card details</h1>
+
+        <p class="text-center font-normal leading-5 text-base text-gray-600 mb-8">Enter your card details to kick-start your free trial. Don't worry, you want be charged a dime until your free trial ends in <span class="font-bold">7 days.</span>
+        </p>
+
+        <div class="flex w-full justify-between box-border items-center border border-purple-400 focus-within:border-2 border-purple-400 focus-within:shadow-md focus-within:shadow-purple-400 rounded-lg py-2 mb-3" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#808080" class="bi bi-credit-card w-[12%]"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <input type="text" placeholder="Card number" class="w-[50%] inline box-border focus:outline-none bg-transparent">
+            <input type="text" placeholder="MM/YY" class=" w-[27%] inline box-border focus:outline-none bg-transparent">
+            <input type="text" placeholder="CVC" class="w-[11%] inline box-border focus:outline-none bg-transparent">
+        </div>
+
+        <button class="bg-indigo-600 text-white w-full py-2 rounded-lg border bg-indigo-700 mb-5 text-sm font-medium">Start your 7-days free trial</button>
+
+        <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(124, 221, 75)" stroke="rgb(124, 221, 75)" stroke-width=".7" class="bi bi-shield-lock"
+            viewBox="0 0 16 16">
+            <path
+                d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+            <path
+                d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415" />
+            </svg>
+            <p class="text-sm text-slate-600">Secure and encrypted</p>
+        </div>
+
+    </div>
+
+    <div class="bg-white w-96 mx-auto flex flex-col justify-between items-center px-9 py-9 my-20 rounded-xl">
+        <img src="img/study.png" alt="" class="w-1/2 mb-5">
+
+        <h1 class="text-4xl font-semibold mb-2">Check your email</h1>
+
+        <p class="text-center font-normal leading-5 text-base text-gray-600 mb-8">Enter the 6-digit code we just sent to <span class="font-bold">amy.smith@zest.com</span> to continue.</p>
+
+        <input type="text" placeholder="Enter the code" class="placeholder:text-center focus:outline-none text-center w-full border border-purple-400 focus-within:border-2 border-purple-400 focus-within:shadow-md focus-within:shadow-purple-400 rounded-lg py-2 mb-3">
+
+        <button class="bg-indigo-600 text-white w-full py-2 rounded-lg border bg-indigo-700 mb-5 text-sm font-medium">Continue</button>
+    </div>
+
+    <div class="bg-white w-96 mx-auto flex flex-col justify-between items-center px-9 py-9 my-20 rounded-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill mb-3"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>
+
+        <h1 class="text-4xl font-semibold mb-2">Phone number</h1>
+        
+        <p class="text-center font-normal leading-5 text-base text-gray-600 mb-8">Would you like a new OpenPhone number, or want to port your existing number over?</p>
+
+        <div class="w-full bg-purple-100 p-3 rounded-lg mb-2">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 text-slate-700">
+                    <p>🎁</p>
+                    <p class="text-sm align-baseline font-medium">Brand new number</p>
+                </div>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg></p>
+            </div>
+        </div>
+        
+        <div class="flex gap-3 w-full p-3 text-slate-700 justify-start mb-8">
+            <p>➡️</p>
+            <p class="text-sm align-baseline font-medium">Port existing number</p>
+        </div>
+
+        <p class="text-center font-normal leading-5 text-sm leading-4 text-justify text-gray-400 mb-8">If you choose to port your existing number, you will be given a temporary OpenPhone number to test things out during the porting process.</p>
+
+    </div>
+
+
+</body>
+</html>
