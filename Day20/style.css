@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 1px 1px 20px 1px rgba(239, 205, 205, 0.629);
+}
+.navbar span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculatorbody, .resultPage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.heading{
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.inputContainer{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.input{
+    padding: 10px 15px;
+    border: 1px solid rgba(246, 196, 196, 0.737);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.input:focus{
+    outline: none;  
+    border: 2px solid rgba(246, 196, 196, 0.88);  
+    padding: 9px 14px;
+}
+
+.input::placeholder{
+    font-size: 15px;
+}
+
+.submitBtn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: none;
+    background-color: rgb(250, 89, 89);
+    color: white;
+}
+
+.submitBtn:active{
+    background-color: rgba(250, 89, 89, 0.663);
+}
+
+.bmilink{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.resultPage{
+    display: none;
+}
+
+.resultValue{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.resultcategory{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#resultcategory{
+    color: rgb(105, 188, 223);
+}
+
+.bmichart{
+    display: block;
+    width: 40%;
+    margin: 5px auto;
+}
+
+.reload{
+    display: block;
+    font-size: small;
+}
+
+.bmiinfo{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 60%;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.bmiinfo p{
+    text-align: justify;
+    margin: 15px 0;
+}
+
+table{
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid rgba(232, 229, 229, 0.496);
+    margin: 20px auto;
+}
+
+ tr:nth-child(even){
+    background-color: rgba(211, 211, 211, 0.322);
+}

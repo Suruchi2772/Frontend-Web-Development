@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Take a health test </h1><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-pulse-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
+                <path
+                    d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+            </svg></span>
+        </div>
+
+    <div class="calculatorbody" id="calculatorbody">
+        <p class="heading" id="heading">Check your <a class="bmilink" href="info.html">BMI</a></p>
+        <div id="inputContainer" class="inputContainer">
+            <input type="text" id="weight" class="input" placeholder="Enter Weight in Kg">
+            <input type="text" id="height" class="input" placeholder="Enter Height in cm">
+        </div>
+        <button id="submitBtn" onclick="calculate()" class="submitBtn">Check your health</button>
+    </div>
+
+    <div class="resultPage" id="resultPage">
+        <p id="resultValue" class="resultValue">1234</p>
+        <p class="resultcategory" id="resultStatus">Your are <span id="resultcategory">Normal😃</span></p>
+        <img src="img/bmichart.jpg" class="bmichart" alt="bmi chart">
+        <a href="index.html" class=" reload bmilink">Calculate Another BMI</a>
+        <a href="info.html" class="reload bmilink">Know More About BMI</a>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
