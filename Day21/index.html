@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="add-user-container">
+        <h1 class="add-user-heading">Add new user</h1>
+        <div class="add-user-input-container">
+            <input type="text" placeholder="Enter name..." class="input" id="name">
+            <input type="email" placeholder="Enter email..." class="input alertstate" id="email">
+            <button onclick="addUser()" class="submitbtn">Add user</button>
+        </div>
+        <div class="alert" id="alert"></div>
+    </div>
+
+
+    <h3 class="user-data-header">User Information</h3>
+    <div class="user-container" id="userContainer">
+        <div class="user userheader">
+            <h4 class="information name-field">Name</h4>
+            <h4 class="information">Email</h4>
+        </div>
+        <!-- <div class="user">
+            <p id="name" class="information">Suruchi</p>
+            <p id="email" class="information">suru@gmail.com</p>
+            <button class="delbtn"><img src="img/trash3.svg" alt=""></button>
+        </div> -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

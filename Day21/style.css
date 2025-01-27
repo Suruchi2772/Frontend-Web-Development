@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width:768px){        
+    .add-user-container{
+        margin: 50px auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* padding: 0 %; */
+        /* position: relative; */
+    }
+
+    .add-user-heading{
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+
+    .add-user-input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .input{
+        width: 50%;
+        min-width: 260px;
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(204, 155, 237, 0.756);
+        flex-grow: 1;
+    }
+
+    .input:focus{
+        outline: none;
+        border: 2px solid rgba(204, 155, 237, 0.756);
+        padding: 9px 19px;
+    }
+
+    .submitbtn{
+        width: 50%;
+        min-width: 260px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: rgb(166, 48, 245);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .submitbtn:active{
+        background-color: rgb(192, 131, 233);
+    }
+
+    .user-container{
+        width: 60%;
+        margin: auto;
+        /* background-color: aquamarine; */
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .user-data-header{
+        text-align: center;
+        margin-bottom:5px ;
+    }
+
+    .user{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+        /* justify-content: space-between; */
+        border-radius: 10px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+    }
+
+    .user:nth-child(odd){
+        background-color: rgba(235, 219, 245, 0.625);
+    }
+    .user:nth-child(even){
+        background-color: rgba(233, 221, 239, 0.202);
+    }
+
+    .information{
+        text-align:left;
+        width: 64%;
+        flex: auto;
+        /* background-color: aqua;
+        border: 1px solid red; */
+    }
+
+    .name-field{
+        text-transform: capitalize;
+        width: 30%;
+    }
+
+    .alert{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        border-radius: 10px;
+        padding: 10px 30px;
+        width: 400px;
+        text-align: left;
+        transition: transform .1s ease-in;
+        transform: scale(0);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .success{
+        transform: scale(1);
+        background-color: rgb(182, 245, 182);
+        color: green;
+    }
+    .danger{
+        transform: scale(1);
+        background-color: rgb(241, 179, 179);
+        color: red;
+    }
+    .remove{
+        transform: scale(1);
+        background-color: rgba(170, 190, 231, 0.56);
+        color: rgb(4, 16, 81);
+    }
+
+    .delbtn{
+        border: none;
+        width: 6%;
+        /* background-color: blue; */
+        height: 100%;
+        padding: 15px;
+        background-image: url(img/trash3.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+    }
+}
+
+
+@media (max-width:767px){        
+    .add-user-container{
+        margin: 60px auto;
+        width: 50%;
+        text-align: center;
+        /* padding: 0 %; */
+        /* position: relative; */
+    }
+
+    .add-user-heading{
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .add-user-input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .input{
+        width: 50%;
+        min-width: 260px;
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(204, 155, 237, 0.756);
+        flex-grow: 1;
+    }
+
+    .input:focus{
+        outline: none;
+        border: 2px solid rgba(204, 155, 237, 0.756);
+        padding: 9px 19px;
+    }
+
+    .submitbtn{
+        width: 50%;
+        min-width: 260px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: rgb(166, 48, 245);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .submitbtn:active{
+        background-color: rgb(192, 131, 233);
+    }
+
+    .user-container{
+        width: 90%;
+        margin: auto;
+        /* background-color: aquamarine; */
+        padding: 10px;
+    }
+
+    .user-data-header{
+        text-align: center;
+        margin-bottom:5px ;
+    }
+
+    .user{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+        /* justify-content: space-between; */
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        white-space: wrap;
+        overflow-x: auto;
+        /* overflow: hidden; */
+    }
+
+    .user::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .userheader{
+        display: none;
+    }
+    
+    .user:nth-child(odd){
+        background-color: rgba(235, 219, 245, 0.625);
+    }
+    .user:nth-child(even){
+        background-color: rgba(233, 221, 239, 0.202);
+    }
+    
+    .information{
+        word-wrap: break-word;
+        text-align:left;
+        /* width: 47%; */
+        flex: auto;
+        word-wrap: break-word;
+    }
+
+    .name-field{
+        text-transform: capitalize;
+    }
+
+    .alert{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        border-radius: 10px;
+        padding: 10px 30px;
+        width: 300px;
+        text-align: left;
+        transition: transform .1s ease-in;
+        transform: scale(0);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .success{
+        transform: scale(1);
+        background-color: rgb(182, 245, 182);
+        color: green;
+    }
+    .danger{
+        transform: scale(1);
+        background-color: rgb(241, 179, 179);
+        color: red;
+    }
+    .remove{
+        transform: scale(1);
+        background-color: rgba(170, 190, 231, 0.768);
+        color: rgb(4, 16, 81);
+    }
+
+    .delbtn{
+        border: none;
+        width: 6%;
+        /* background-color: blue; */
+        height: 100%;
+        padding: 15px;
+        background-image: url(img/trash3.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+    }
+}
+
+
