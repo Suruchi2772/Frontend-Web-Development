@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 400px;
+    /* height: 500px; */
+    box-shadow: 1px 1px 22px 1px rgba(204, 203, 203, 0.295);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.img-container{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    height: 180px;
+    flex-direction: column;
+    /* border-bottom: 1px solid rgba(207, 205, 205, 0.308); */
+    position: relative;
+}
+.topBg,.bottomBg{
+    height: 50%;
+    width: 100%;
+}
+
+.topBg{
+    background:linear-gradient(#176fc79d,rgba(255, 255, 255, 0.635));
+}
+
+.profile-img{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.userbtn{
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #176fc79d;
+    border-radius: 10px;
+    background-color: white;
+    color: #176fc79d;
+}
+
+.userbtn:active{
+    color: #7bb2e89d;
+    border: 2px solid #7bb2e89d;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    /* background-color: rgb(21, 255, 0); */
+    line-height: 30px;
+}
+
+.username{
+    font-size: 13px;
+    /* background-color: aqua; */
+    /* line-height: 13px; */
+    color: rgb(126, 126, 126);
+    /* background-color: #d0cecea7; */
+    /* display: inline; */
+    /* padding: 2px 10px; */
+    /* border-radius: 20px; */
+}
+
+.dob{
+    margin-top: 8px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.callbtn, .emailbtn, .locationbtn{
+    height: 40px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.callbtn{
+    background: url(img/telephone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.emailbtn{
+    background: url(img/envelope-at.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.locationbtn{
+    background: url(img/geo-alt.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+.contact-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(#d5e4f47a,white,#d5e4f47a);
+    border-radius: 10px;
+    /* border-top: 2px solid rgba(211, 211, 211, 0.485); */
+}
+
+.hidden{
+    display: none;
+}
+
+.details{
+    /* color: gray; */
+    font-size: 17px;
+}
+
+.contact{
+    padding: 20px;
+    /* border-top: 2px solid rgba(211, 211, 211, 0.485); */
+    font-size: 20px;
+}
+

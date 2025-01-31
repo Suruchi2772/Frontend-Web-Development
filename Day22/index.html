@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises, async and await</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body">
+    <div class="container">
+        <div class="img-container">
+            <div class="topBg"></div>
+            <div class="bottomBg"></div>
+            <img src="img/profile.jpg" alt="" class="profile-img" id="profile-img">
+        </div>
+        <div>
+            <p id="name" class="name">Vaishali</p>
+            <p id="username" class="username">@vaisu1234</p>
+            <p id="dob" class="dob">2002-07-27</p>
+            <div class="contact-container">
+                <div class="contact-btn">
+                    <button onclick="getEmail()" class="emailbtn"></button>
+                    <button onclick="getCall()" class="callbtn"></button>
+                    <button onclick="getLocation()" class="locationbtn"></button>
+                </div>
+                <div class="contact">
+                    <p id="email" class="details">suru@gmail.com</p>
+                    <p id="call" class="details hidden">929384844848</p>
+                    <p id="location" class="details hidden">UttarPradesh, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="getuser()" class="userbtn">Generate Random User</button>
+    <script src="index.js"></script>
+</body>
+</html>
