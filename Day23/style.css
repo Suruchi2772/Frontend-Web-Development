@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html{
+    /* padding-bottom: 20px; */
+    background-color: rgb(0, 0, 0);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.search-container{
+    width: 100%;
+    /* margin-top: 50px; */
+    height: 30%;
+    display: flex;
+    background: url(img/back.jpg);
+    background-size: cover;
+    position: relative;
+    border-bottom: .4rem solid red;
+    /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1/5px; */
+    border-radius: 0 0 70% 70%;
+    overflow: hidden;
+}
+
+.tint{
+    position: absolute;
+    background: radial-gradient(rgba(92, 92, 92, 0.325),rgba(0, 0, 0, 0.67));
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.search{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    width: 50%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+
+.searchField{
+    flex: 1 1 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    color: white;
+    background-color: rgba(32, 32, 32, 0.893);
+}
+
+.searchField::placeholder{
+    color: rgba(255, 255, 255, 0.778);
+}
+
+.searchField:focus{
+    outline: none;
+    border: 2px solid rgb(96, 96, 96);
+}
+
+.searchBtn{
+    border-radius: 0 25px 25px 0;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+}
+
+.searchBtn:active{
+    background-color: rgba(255, 0, 0, 0.705);
+
+}
+
+.netflix-icon{
+    position: absolute;
+    height: 3.7rem;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    box-shadow: 1px 1px 22px 2px rgba(255, 255, 255, 0.33) ;
+    background-color: rgba(255, 255, 255, 0.101);
+}
+
+.content{
+    color: white;
+    flex: 1 1 0;
+}
+
+.content-container{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    gap: 15px;
+    color: white;
+}
+
+.poster-container{
+    width: 40%;
+    /* height: 300px; */
+    padding: 10px;
+    position: relative;
+}
+
+.poster{
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+}
+
+.content-container{
+    margin-bottom: 45px;
+}
+
+.text{
+    color: rgb(227, 225, 225);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.details{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.suggestion{
+    /* height: 20px; */
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 0 20px 20px 20px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.must-watch{
+    border: 1px solid rgb(194, 155, 56);
+    box-shadow: 1px 1px 22px 3px rgb(236, 209, 87);
+    background-color: rgb(233, 194, 97);
+    color: black;
+    font-size: 15px;
+}
+
+.ok-watch{
+    background-color: peru;
+    border: 1px solid rgb(162, 92, 23);
+    box-shadow: 1px 1px 20px 1px rgb(230, 169, 107);
+    color: black;
+    font-size: 15px;
+}
+
+.boring{
+    background-color: rgb(225, 131, 102);
+    border: 1px solid rgb(201, 95, 62);
+    box-shadow: 1px 1px 20px 1px rgb(233, 162, 140);
+    color: black;
+    font-size: 15px;
+}
+
+.error{
+    color: rgb(139, 137, 137);
+    text-align: center;
+    margin-top: 100px;
+}
+.hidden{
+    display: none;
+}
+
+
+@media(max-width:701px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .search-container{
+        /* width: 200%; */
+        /* margin-top: 50px; */
+        height: 25%;
+        display: flex;
+        background: url(img/back.jpg);
+        background-size: cover;
+        position: relative;
+        border-bottom: none;
+        /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1/5px; */
+        border-radius: 0;
+        /* transform: scale(2); */
+        overflow: hidden;
+        box-shadow: 1px 1px 20px 1px rgb(180, 48, 48) ;
+    }
+    .netflix-icon{
+        position: absolute;
+        height: 2.9rem;
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%,0);
+        box-shadow: 1px 1px 22px 2px rgba(255, 255, 255, 0.33) ;
+        background-color: rgba(255, 255, 255, 0.101);
+    }
+
+    .search{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%,10%);
+        width: 95%;
+        /* background-color: aliceblue; */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+        
+    .searchField{
+        flex: 1 1 0;
+        padding: 10px 15px;
+        font-size: .9rem;
+        border-radius: 25px 0 0 25px;
+        border: none;
+        color: white;
+        background-color: rgba(32, 32, 32, 0.893);
+    }
+
+    .searchField::placeholder{
+        color: rgba(255, 255, 255, 0.778);
+    }
+
+    .searchField:focus{
+        outline: none;
+        border: 2px solid rgb(96, 96, 96);
+    }
+
+    .searchBtn{
+        border-radius: 0 25px 25px 0;
+        padding: 10px 10px;
+        border: none;
+        font-size: .9rem;
+        color: white;
+        background-color: red;
+    }
+    .content-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* background-color: rgb(27, 26, 26); */
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        /* padding: 20px 30px; */
+        margin-bottom: 50px;
+        /* gap: 15px; */
+        color: white;
+    }
+
+    .poster-container{
+        width: 100%;
+        /* height: 300px; */
+        padding: 10px;
+        position: relative;
+    }
+
+    .poster{
+        width: 100%;
+        /* height: 50%; */
+        object-fit: cover;
+    }
+
+    .content-container{
+        margin-bottom: 45px;
+    }
+
+    .text{
+        color: rgb(227, 225, 225);
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .details{
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .suggestion{
+        /* height: 20px; */
+        width: 200px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-weight: 900;
+        padding: 5px;
+        border-radius: 0 20px 20px 20px;
+        text-transform: capitalize;
+        font-style: italic;
+    }
+}
+
+@media(min-width:701px) and (max-width:1065px){
+    .poster-container{
+        width: 45%;
+    }
+    .content-container{
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px 30px;
+        margin-bottom: 50px;
+        gap: 15px;
+        color: white;
+    }
+}

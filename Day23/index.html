@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="tint"></div>
+        <img src="img/nficon2023.ico" alt="" class="netflix-icon">
+        <div class="search">
+            <input type="text" placeholder="Search Movie" class="searchField" id="searchField">
+            <button onclick="search()" id="searchBtn" class="searchBtn">Search</button>
+        </div>
+    </div>
+
+    <div class="content-container hidden" id="content-container">
+        <div class="poster-container">
+            <img src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg"
+                class="poster" id="poster" alt="">
+            <div class="suggestion" id="suggestion-container">
+                <p id="suggestion">time waste </p>
+            </div>
+        </div>
+        <div class="content">
+            <p class="details">Title: <span id="title" class="text"> </span></p>
+            <p class="details">Plot: <span id="plot" class="text"></span></p>
+            <p class="details">Released: <span id="released" class="text"></span></p>
+            <p class="details">Genre: <span id="genre" class="text"></span></p>
+            <p class="details">Director: <span id="director" class="text"></span></p>
+            <p class="details">Writer: <span id="writer" class="text"></span></p>
+            <p class="details">Actors: <span id="actors" class="text"></span></p>
+            <p class="details">Language: <span id="language" class="text"></span></p>
+            <p class="details">IMDB rating: <span id="imdb" class="text"></span></p>
+            <p class="details">Awards: <span id="awards" class="text"></span></p>
+        </div>        
+    </div>
+
+    <div class="error hidden" id="errors">
+        <h1>Movie Not Found!</h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
