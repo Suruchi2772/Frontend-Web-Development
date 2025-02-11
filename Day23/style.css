@@ -202,7 +202,7 @@ html,body{
         height: 25%;
         display: flex;
         background: url(img/back.jpg);
-        background-size: cover;
+        background-size: 350%;
         position: relative;
         border-bottom: none;
         /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1/5px; */
