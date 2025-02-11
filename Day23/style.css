@@ -316,6 +316,9 @@ html,body{
         text-transform: capitalize;
         font-style: italic;
     }
+    .hidden{
+        display: none;
+    }
 }
 
 @media(min-width:701px) and (max-width:1065px){
@@ -334,5 +337,8 @@ html,body{
         margin-bottom: 50px;
         gap: 15px;
         color: white;
+    }
+    .hidden{
+        display: none;
     }
 }
